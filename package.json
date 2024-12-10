@@ -1,0 +1,42 @@
+{
+  "name": "sdk-one",
+  "version": "1.0.1",
+  "description": "A sample React SDK",
+  "main": "dist/index.ts",
+  "type": "module",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/purvik6062/sdk-one.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "sdk",
+    "typescript"
+  ],
+  "author": "purvik6062",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-typescript": "^12.1.1",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.2",
+    "rollup": "^4.28.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.2"
+  }
+}
